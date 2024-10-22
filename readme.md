@@ -36,7 +36,7 @@ Welcome to the **HTML-CSS Project Repository**! This repository showcases a coll
 ```bash 
 index.html 
 ``` 
-in your browser. 
+   in your browser. 
 
 ## 🌟 Demo
 Live Demo – Click here to see the project in action.
