@@ -32,7 +32,7 @@ Welcome to the **HTML-CSS Project Repository**! This repository showcases a coll
     git clone https://github.com/harsh-sangwan2003/html-css-repo.git
 ```
 
-2. Launch index.html in your browser. 
+2. Launch ```bash index.html ``` in your browser. 
 
 ## 🌟 Demo
 Live Demo – Click here to see the project in action.
