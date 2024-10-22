@@ -18,3 +18,20 @@ Welcome to the **HTML-CSS Project Repository**! This repository showcases a coll
 │   ├── index.html       # Main HTML file
 │   ├── style.css        # Main CSS file
 │   └── assets/          # Images, fonts, etc.
+
+## ✨ Features
+- Responsive Design: Optimized for all screen sizes.
+- Modern UI/UX: Clean and interactive design patterns.
+- Animations: Smooth transitions and hover effects.
+- Cross-browser Compatibility: Works seamlessly across popular browsers.
+
+## 🚀 Getting Started
+
+## 🌟 Demo
+-- Live Demo – Click here to see the project in action.
+
+## 🤝 Contributions
+- Feel free to fork this repository, submit issues, or contribute by submitting pull requests. Contributions are welcome!
+
+## 📬 Contact
+[GitHub](https://github.com/harsh-sangwan2003)
