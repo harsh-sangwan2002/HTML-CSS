@@ -21,15 +21,21 @@ Welcome to the **HTML-CSS Project Repository**! This repository showcases a coll
 ```
 
 ## ✨ Features
-Responsive Design: Optimized for all screen sizes.
-Modern UI/UX: Clean and interactive design patterns.
-Animations: Smooth transitions and hover effects.
-Cross-browser Compatibility: Works seamlessly across popular browsers.
+- **Responsive Design**: Optimized for all screen sizes.
+- **Modern UI/UX**: Clean and interactive design patterns.
+- **Animations**: Smooth transitions and hover effects.
+- **Cross-browser Compatibility**: Works seamlessly across popular browsers.
 
 ## 🚀 Getting Started
+1. Clone the repository:
+```bash
+    git clone https://github.com/harsh-sangwan2003/html-css-repo.git
+```
+
+2. Launch <sub>index.html</sub> in your browser. 
 
 ## 🌟 Demo
--- Live Demo – Click here to see the project in action.
+Live Demo – Click here to see the project in action.
 
 ## 🤝 Contributions
 - Feel free to fork this repository, submit issues, or contribute by submitting pull requests. Contributions are welcome!
