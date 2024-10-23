@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+    1. block
+        next element -> newLine
+        padding      -> all dir
+        margin       -> all dir
+        border       -> all dir
+    2. inline
+        next element -> next to the current element
+        padding      -> all dir
+        margin       -> horizontal
+        border       -> all dir
+    3. inline-block
+        next element -> next to the current element
+        padding      -> all dir
+        margin       -> all dir
+        border       -> all dir
+    -->
+    <style>
+
+        .block,
+        .inline,
+        .inline-block{
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .block{
+            background-color: lightblue;
+            display: block;
+
+            /* user-defined size */
+            height:100px;
+            width:100px;
+
+            /* padding */
+            padding-top:10px;
+            padding-right:10px;
+            padding-bottom:10px;
+            padding-left:10px;
+
+            /* margin */
+            margin-top:10px;
+            margin-bottom:4rem;
+
+            /* border */
+            border-top:2px solid red;
+            border-left:2px solid red;
+        }
+
+        .inline{
+            background-color: lightgreen;
+            display: inline;
+
+            /* user defined height -> no */
+            height:100px;
+
+            /* user defined width -> no */
+            width:100px;
+
+            /* padding works */
+            padding-top:30px;
+            padding-left:30px;
+
+
+            margin-top:10px;
+            margin-bottom:10px;
+            /* margin works only in horizontal direction */
+            margin-left:10px;
+            margin-right:10px;
+
+            /* border works in all dir */
+            border-top:2px solid red;
+            border-left:2px solid red;
+        }
+
+        .inline-block{
+            background-color: mediumorchid;
+            display: inline-block;
+
+            /* margin works in all dir */
+            margin-top:10px;
+            margin-left:20px;
+
+            /* padding works in all dir */
+            padding-top:10px;
+            padding-left: 10px;
+
+            /* border works in all dir */
+            border-top:2px solid red;
+            border-left:2px solid red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Hello from h2</h1>
+
+    <!-- Block level element -->
+    <div class="block">Hello! How are you?</div>
+    <div class="block">Hello! How are you?</div>
+
+    <!-- Inline elements -->
+    <div class="inline">I am inline</div>
+    <div class="inline">I am inline</div>
+
+    <!-- Inline block -->
+    <div class="inline-block">I am inline block</div>
+    <div class="inline">I am inline</div>
+
+</body>
+
+</html>
