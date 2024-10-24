@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- !important > id > class > element > universal -->
+    <style>
+
+        /* Universal selector */
+        * {
+            color: blue;
+        }
+
+        /* Element selector */
+        div {
+            color: red !important;
+        }
+
+        /* Class selector */
+        .child {
+            color: lightgreen;
+        }
+
+        /*  */
+        div.child {
+            color: black;
+        }
+
+        /* Id selector */
+        #unique {
+            color: lightpink;
+        }
+
+        .parent{
+            text-decoration: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="child" id="unique">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem vel ipsum iusto molestias soluta laudantium
+        dolore, fugit adipisci similique facere ex cum doloribus quam sed eos accusamus, laboriosam nam!
+    </div>
+
+    <div class="parent">
+        <a href="https://www.google.com">Go to somewhere</a>
+    </div>
+
+</body>
+
+</html>

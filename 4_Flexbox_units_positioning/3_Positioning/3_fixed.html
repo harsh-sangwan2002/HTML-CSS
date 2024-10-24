@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            width:100%;
+
+            /* 1. Fixed w.r.t. the UI screen 
+            2. top and left are measured wrt the page origin
+            3. Use case : Sticky navbar
+            */
+            position: fixed;
+        }
+
+        .parent {
+
+            /* margin-left: 1rem; */
+            width: 90vw;
+            background-color: rgb(146, 85, 202);
+
+            /* Relative -> Then the reference point will be this container */
+        }
+
+        .box {
+            height: 10rem;
+            width: 10rem;
+            margin-bottom: 1rem;
+            border: dashed
+        }
+
+        .box-1 {
+            background-color: lightblue;
+        }
+
+        .box-2 {
+            background-color: lightcoral;
+
+            /* 1. relative -> Natural flow is maintained
+            Position w.r.t. the parent container */
+
+            /* position: relative;
+            top:100px;
+            left:100px; */
+
+            /* 2. absolute -> Element comes out of the natural flow.
+            Position w.r.t. the body.
+            */
+            /* position: absolute;
+            top:10px;
+            left:10px; */
+        }
+
+        .box-3 {
+            background-color: lightgreen;
+        }
+
+        .box-4 {
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Position - Fixed</h1>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Sign Up</li>
+        </ul>
+    </nav>
+
+    <div class="parent">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+    </div>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores debitis sed autem doloribus eos itaque,
+        molestiae similique beatae nemo possimus obcaecati, qui pariatur illum. Minima fugit ipsum iure ipsam? Modi, est
+        optio obcaecati, minus dolorem quibusdam officiis aperiam, ut maiores sint beatae sapiente dicta totam animi.
+        Sint quibusdam odit maxime numquam accusantium impedit voluptates suscipit modi voluptas praesentium error saepe
+        natus perspiciatis quis officiis harum expedita adipisci nostrum, laboriosam tempore facilis enim libero
+        incidunt explicabo? Sunt possimus, saepe dicta recusandae iure numquam harum optio veniam neque beatae, nisi
+        amet molestias. Cumque, rem eligendi accusantium eius repellat dignissimos fugit consequatur deserunt molestias
+        laboriosam, perferendis pariatur, quam at unde sit. Iure enim voluptates, saepe, earum cupiditate sit illum
+        nesciunt ratione velit facilis quam quaerat? Facilis rerum quia animi! Nostrum iste maxime, reprehenderit
+        commodi accusantium fugit! Ex saepe molestiae, aut nobis inventore molestias asperiores quas delectus ea. Harum
+        et, placeat, optio voluptatibus minima modi sunt, voluptas reprehenderit error id eos illum ex culpa?
+        Consequuntur nobis sint enim accusamus! Nemo corrupti mollitia dolorum ex unde labore, consequuntur illo laborum
+        voluptates eius voluptatum. Quam autem impedit, quisquam temporibus exercitationem consectetur harum qui ipsa
+        perferendis ratione obcaecati sint provident ipsum beatae fuga, error, optio amet dolorum. Ab, quibusdam
+        voluptatum blanditiis minus porro obcaecati beatae ullam necessitatibus ratione quae amet. Similique sit et quis
+        dolores id doloremque esse repellendus reprehenderit ducimus natus accusantium aperiam earum minus nostrum nobis
+        odit suscipit reiciendis, omnis assumenda officia? Dicta, quasi et nemo blanditiis modi harum sint, deleniti
+        reprehenderit ipsam iusto exercitationem explicabo? Quasi vero, pariatur delectus laborum tempora earum
+        consequuntur facere enim cumque perferendis cupiditate veniam quo quod labore, ut ad nam! Minima, fugiat iste!
+        Eum similique possimus vitae ex cum dicta non impedit ut aspernatur sequi adipisci consectetur omnis mollitia
+        iste placeat, autem odio corrupti. Veritatis fugit quo ut rem cumque at alias officiis? Accusamus dolorem
+        corrupti maxime earum nihil sunt. Odio neque maxime beatae animi ex expedita facere culpa velit ea omnis
+        pariatur iure aspernatur consequuntur impedit soluta, architecto exercitationem aut, sint vitae dignissimos
+        quibusdam nam quia unde doloremque. Eveniet pariatur nam, saepe earum optio voluptates aspernatur hic eum quos
+        accusamus ducimus libero adipisci veritatis alias magnam velit explicabo amet ab laboriosam fuga. Quod laborum
+        aliquid incidunt expedita perspiciatis deleniti molestiae magni, porro, veniam nisi deserunt ex provident
+        facilis! Enim quis blanditiis consequuntur ullam deserunt velit a, obcaecati quia corporis, cum quidem, laborum
+        minus iste totam mollitia aperiam. Accusantium, non qui ullam tenetur maxime ut facilis neque atque voluptatem
+        deleniti commodi natus ex soluta officia numquam blanditiis rerum corrupti unde quia odio doloremque. Ducimus
+        sit veritatis non aliquam numquam perspiciatis optio ipsum, consequatur illo laudantium. Praesentium qui
+        exercitationem eos tempore accusamus, doloremque non suscipit fugit perferendis consequuntur maxime, dolorum ad
+        enim sequi officia sapiente eius id veniam nobis rerum distinctio. Saepe temporibus est impedit incidunt natus
+        vero ab, omnis atque qui rerum, praesentium autem consequatur distinctio debitis aliquam error corporis
+        molestiae maxime in aperiam. Laudantium autem distinctio neque? Hic distinctio dignissimos similique architecto
+        molestiae tempore facilis nesciunt voluptatem ad.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom:1rem;
+        }
+
+        .parent{
+
+            margin-left: 1rem;
+            width:90vw;
+            background-color: rgb(146,85,202);
+
+            /* Relative -> Then the reference point will be this container */
+        }
+
+        .box{
+            height:10rem;
+            width:10rem;
+            margin-bottom: 1rem;
+            border:dashed
+        }
+
+        .box-1{
+            background-color: lightblue;
+        }
+
+        .box-2{
+            background-color: lightcoral;
+
+            /* 1. relative -> Natural flow is maintained
+            Position w.r.t. the parent container */
+
+            /* position: relative;
+            top:100px;
+            left:100px; */
+
+            /* 2. absolute -> Element comes out of the natural flow.
+            Position w.r.t. the body.
+            */
+            /* position: absolute;
+            top:10px;
+            left:10px; */
+        }
+
+        .box-3{
+            background-color: lightgreen;
+        }
+
+        .box-4{
+            background-color: lightsalmon;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Position - Absolute, Relative</h1>
+
+    <div class="parent">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+    </div>
+
+</body>
+
+</html>
