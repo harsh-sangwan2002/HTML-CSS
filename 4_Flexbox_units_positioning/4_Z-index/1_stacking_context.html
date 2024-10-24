@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .parent {
+
+            margin-left: 1rem;
+            width: 90vw;
+            background-color: rgb(146, 85, 202);
+
+            /* Relative -> Then the reference point will be this container */
+        }
+
+        .box {
+            height: 10rem;
+            width: 10rem;
+            margin-bottom: 1rem;
+            border: dashed
+        }
+
+        .box-1 {
+            background-color: lightblue;
+            position: relative;
+            top: 22rem;
+        }
+
+        .box-2 {
+            background-color: lightcoral;
+
+            /* 1. relative -> Natural flow is maintained
+            Position w.r.t. the parent container */
+
+            position: relative;
+            top: 11rem;
+
+            /* 2. absolute -> Element comes out of the natural flow.
+            Position w.r.t. the body.
+            */
+            /* position: absolute;
+            top:10px;
+            left:10px; */
+        }
+
+        .box-3 {
+            background-color: lightgreen;
+            position: relative;
+        }
+
+        .box-4 {
+            background-color: lightsalmon;
+            /* position: relative; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos impedit sapiente sint commodi vero laboriosam
+        repellat similique fugiat placeat doloremque laudantium ratione rem, assumenda aliquid odio! Saepe, earum
+        facilis.</p>
+
+    <div class="parent">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- 
+Rules :
+1. Positioned element is always above statically placed elements
+2. if both the elements are positioned then the element 
+that is positioned later in html is placed above.
+3. higher the z-index higher the value  highe it will placed
+Note : only position property can use z-index
+ -->
