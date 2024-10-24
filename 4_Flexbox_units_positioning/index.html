@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .px,.rem,.em,.vh-vw{
+            background-color: lightgreen;
+            margin-bottom:20px;
+        }
+
+        /* Absolute unit */
+        /* pixels is an absolute unit */
+        .px{
+            height:100px;
+        }
+
+        /* html{
+            font-size:10px;
+        } */
+
+        /* Relative units */
+        /* By default 1rem -> 16px = font-size of html tag */
+        /* You can control the font-size of html tag */
+        /* Use case : Control font-size across the UI */
+        .rem{
+            font-size:1rem;
+            width:3rem;
+        }
+
+        .parent-em{
+            height:50px;
+            background-color:rgb(255,233,224);
+            margin-bottom:2rem;
+            font-size:16px;
+        }
+
+        /* 1em = font-size of the parent element */
+        /* UseCase - Adding padding in the container */
+        .em{
+            font-size:2em;
+            background-color: lightcyan;
+        }
+
+        /* view-width & view-height */
+        /* vh - 100% of visible browser window screen height */
+        /* vw - 100% of visible browser window screen width */
+        /* Creating components which changes accoding to screen height & width */
+        /* Example - Excel grid */
+        .vh-vw{
+            height:30vh;
+            width:50vw;
+        }
+
+        /* percentage unit */
+        /* It is relative to your parent */
+        /* You should give some unit other than % to the parent/ancestor */
+        .parent{
+            background-color: lightgreen;
+            height:10rem;
+            width:10rem;
+        }
+
+        .child{
+            background-color: lightcoral;
+            height:50%;
+            width:50%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="px">Pixel Unit</div>
+
+    <div class="rem">REM Unit</div>
+
+    <div class="parent-em">
+        <div class="em">I am em</div>
+    </div>
+
+    <div class="vh-vw">Vh-Vw units</div>
+
+    <div class="parent">
+        <div class="child">Percentage</div>
+    </div>
+
+</body>
+
+</html>
