@@ -29,7 +29,7 @@ Welcome to the **HTML-CSS Project Repository**! This repository showcases a coll
 ## 🚀 Getting Started
 1. Clone the repository:
 ```bash
-    git clone https://github.com/harsh-sangwan2003/html-css.git
+git clone https://github.com/harsh-sangwan2003/html-css.git
 ```
 
 2. Launch index.html in your browser. 
